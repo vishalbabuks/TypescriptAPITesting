@@ -1,4 +1,3 @@
-import * as supertest from 'supertest'
 import brandController from '../controller/brand.controller';
 
 
