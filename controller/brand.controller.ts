@@ -8,12 +8,9 @@ class brandcontroller{
     getBrandsById(id:string){
         return request.get(`/brands/${id}`)
     }
-    postbrand(name:string,description:string){
-        const postdata={
-            "name": `${name}`,
-            "description": `${description}`
-          }
-        return request.post('/brands').send(postdata);
+    postbrand(data: {[key: string]: string | number}){
+
+        return request.post('/brands').send(data);
     }
 }
 
